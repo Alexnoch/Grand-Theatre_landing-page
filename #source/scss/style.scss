@@ -1,0 +1,104 @@
+// ШРИФТ ПО УМОЛЧАНИЮ
+body{
+    font-family: sans-serif;
+}
+// ШРИФТЫ
+@font-face{
+    font-family: 'OpenSans';
+    src:url('../fonts/OpenSans-Regular.ttf');
+}
+@font-face{
+    font-family: 'OpenSansConB';
+    src:url('../fonts/OpenSansCondensed-Bold.ttf');
+}
+@font-face{
+    font-family: 'OpenSansConL';
+    src: url('../fonts/OpenSansCondensed-Light.ttf');
+}
+
+// ОБНУЛЕНИЕ
+@import "null.scss";
+
+//МИКСИНЫ
+@import "mixin.scss";
+
+// ОБОЛОЧКА 
+body{
+    background-color: #333333;
+}
+
+.wrapper{
+    margin: 0 auto;
+}
+
+// ОСНОВНАЯ СЕТКА (Выравнивание пример: 1170px)
+.container{
+    margin:0 auto;
+    max-width: 1130px;
+    padding:0 15px;
+
+    @media(max-width:991px){
+        padding:5px;  
+    }
+}
+
+// СТАНДАРТНЫЕ ПЕРЕМЕННЫЕ
+
+// ПЕРЕМЕННЫЕ ПРОЕКТА
+::-webkit-scrollbar-button {
+    background-image:url('');
+    background-repeat:no-repeat;
+    width:4px;
+    height:0px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        
+    background-color:#5e656b;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    background-color:rgb(146, 146, 146);
+    }
+    
+    ::-webkit-scrollbar-thumb:hover{
+    background-color:#eaf1f1;
+    }
+    
+    ::-webkit-resizer{
+        
+    background-image:url('');
+    background-repeat:no-repeat;
+    width:4px;
+    height:0px;
+    }
+    
+    ::-webkit-scrollbar{
+    width: 10px;
+    height:10px;
+    
+    }
+
+
+// ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ
+@import "head.scss";
+@import "about-theatre.scss";
+@import "projects.scss";
+@import "reviews.scss";
+@import "partners.scss";
+@import "footer.scss";
+
+
+// ДОПОЛНИТЕЛЬНЫЕ КЛАССЫ
+.mbn{
+    margin-bottom:0;
+}
+.pb{
+    padding-bottom: 0;
+}
+.mrn{
+    margin-right:0;
+}

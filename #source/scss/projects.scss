@@ -1,0 +1,34 @@
+.projects{
+    margin:0 auto;
+    background-color: #333333;
+    padding-bottom:150px;
+}
+
+.projects__headline{
+    margin:0 auto 110px auto;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: 48px;
+    font-family: 'OpenSansConL';
+    color:#FFFFFF;
+
+    span{
+        color: #D1A954;
+    }
+}
+
+.projects__images{
+    display:flex;
+    margin: 0 auto;
+    padding-bottom:15px;
+
+    @media(max-width:1800px){
+    overflow-x: scroll;
+    }
+
+    img{
+        width:33.3333333333%;
+        min-width: 443px;
+    }
+}
